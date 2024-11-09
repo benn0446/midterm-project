@@ -4,6 +4,7 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Explore The System Magazine - a tour of our solar system, featuring planets, stars, and more.">
     <title>The System</title>
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -11,38 +12,34 @@
     <link rel="stylesheet" href="css/reset.css">
     <link rel="stylesheet" href="css/style.css">
     <link rel="icon" type="image/png" href="images/icon.png">
+    <link rel="preload" href="css/style.css" as="style">
 </head>
 
 <body>
-
-    
-    <a href="#main-content" class="skip-nav-link">Skip to Navigation</a>
-    <a href="#main-content" class="skip-to-content-link">Skip to Content</a>
+    <a href="#main-content" class="skip-nav-link" aria-label="Skip to Navigation">Skip to Navigation</a>
+    <a href="#main-content" class="skip-to-content-link" aria-label="Skip to Content">Skip to Content</a>
 
     <div class="container">
         
         <header>
             <div class="header-wrap">
                 <div class="logo">
-                    <a href="#">THE <span class="highlight-stripe">SYSTEM</span></a>
+                    <a href="#" aria-label="Homepage of The System">THE <span class="highlight-stripe">SYSTEM</span></a>
                 </div>
                 <nav class="navigation">
                     <ul>
-                        <li><a href="#">Planets</a></li>
-                        <li><a href="#">Interseller</a></li>
-                        <li><a href="#">Contact</a></li>
+                        <li><a href="#" aria-label="View planets">Planets</a></li>
+                        <li><a href="#" aria-label="Explore interstellar content">Interseller</a></li>
+                        <li><a href="#" aria-label="Contact page">Contact</a></li>
                     </ul>
                 </nav>
             </div>
         </header>
-
-
         <main id="main-content">
-
             <section class="hero-banner" role="region" aria-label="Website's Main Heading">
                 <div class="hero-wrap">
                     <div class="image-box">
-                        <img src="images/milky-way.jpg" alt="A view of the Milky Way galaxy">
+                        <img src="images/milky-way.jpg" alt="A stunning view of the Milky Way galaxy" />
                     </div>
                     <div class="hero-text">
                         <p>THE SYSTEM MAGAZINE</p>
@@ -52,58 +49,52 @@
                 </div>
             </section>
 
-
             <section class="locals-section">
                 <h2>Meet the Locals</h2>
                 <div class="locals-grid">
-                
-                    <div class="sun-card card">
-                        <img src="images/sun.jpg" alt="Image of the Sun, a burning red star">
+                    
+                    <article class="sun-card card">
+                        <img src="images/sun.jpg" alt="The Sun, a burning red star at the center of our solar system" />
                         <h3>The Sun</h3>
-                        <button onclick="location.href='https://en.wikipedia.org/wiki/Sun'" type="button">Learn More</button>
-                    </div>
+                        <button onclick="location.href='https://en.wikipedia.org/wiki/Sun'" type="button" aria-label="Learn more about the Sun">Learn More</button>
+                    </article>
 
-                    
-                    <div class="mercury-card card">
-                        <img src="images/mercury.jpg" alt="Image of Mercury, the closest planet to the Sun">
+                    <article class="mercury-card card">
+                        <img src="images/mercury.jpg" alt="Mercury, the closest planet to the Sun" />
                         <h3>Mercury</h3>
-                        <button onclick="location.href='https://en.wikipedia.org/wiki/Mercury_(planet)'" type="button">Learn More</button>
-                    </div>
+                        <button onclick="location.href='https://en.wikipedia.org/wiki/Mercury_(planet)'" type="button" aria-label="Learn more about Mercury">Learn More</button>
+                    </article>
 
-
-                    <div class="venus-card card">
-                        <img src="images/venus.jpg" alt="Image of Venus, the second planet from the Sun">
+                    <article class="venus-card card">
+                        <img src="images/venus.jpg" alt="Venus, the second planet from the Sun" />
                         <h3>Venus</h3>
-                        <button onclick="location.href='https://en.wikipedia.org/wiki/Venus'" type="button">Learn More</button>
-                    </div>
+                        <button onclick="location.href='https://en.wikipedia.org/wiki/Venus'" type="button" aria-label="Learn more about Venus">Learn More</button>
+                    </article>
 
-                   
-                    <div class="earth-card card">
-                        <img src="images/earth.jpg" alt="Image of Earth, the third planet from the Sun">
+                    <article class="earth-card card">
+                        <img src="images/earth.jpg" alt="Earth, the third planet from the Sun, home to life" />
                         <h3>Earth</h3>
-                        <button onclick="location.href='https://en.wikipedia.org/wiki/Earth'" type="button">Learn More</button>
-                    </div>
+                        <button onclick="location.href='https://en.wikipedia.org/wiki/Earth'" type="button" aria-label="Learn more about Earth">Learn More</button>
+                    </article>
 
-
-                    <div class="moon-card card">
-                        <img src="images/moon.jpg" alt="Image of the Moon, Earth's natural satellite">
+                    <article class="moon-card card">
+                        <img src="images/moon.jpg" alt="The Moon, Earth's natural satellite" />
                         <h3>The Moon</h3>
-                        <button onclick="location.href='https://en.wikipedia.org/wiki/Moon'" type="button">Learn More</button>
-                    </div>
+                        <button onclick="location.href='https://en.wikipedia.org/wiki/Moon'" type="button" aria-label="Learn more about the Moon">Learn More</button>
+                    </article>
 
-                    
-                    <div class="mars-card card">
-                        <img src="images/mars.jpg" alt="Image of Mars, the red planet">
+                    <article class="mars-card card">
+                        <img src="images/mars.jpg" alt="Mars, the red planet known as the 'Red Planet'" />
                         <h3>Mars</h3>
-                        <button onclick="location.href='https://en.wikipedia.org/wiki/Mars'" type="button">Learn More</button>
-                    </div>
+                        <button onclick="location.href='https://en.wikipedia.org/wiki/Mars'" type="button" aria-label="Learn more about Mars">Learn More</button>
+                    </article>
+
                 </div>
             </section>
         </main>
 
-
         <footer>
-            <p>&copy;2024-The System</p>
+            <p>&copy;2024 The System</p>
         </footer>
 
     </div>
